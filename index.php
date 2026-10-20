@@ -357,14 +357,14 @@
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
-                            <span>Зачем вам курс? <span class="required" aria-hidden="true">*</span></span>
+                            <span>Цель прохождения курса <span class="required" aria-hidden="true">*</span></span>
                             <textarea name="purpose" required placeholder="Например: хочу уметь помочь ребёнку или коллеге"></textarea>
-                            <span class="purpose-picks">
-                                <span class="purpose-pick" role="button" tabindex="0">Для себя</span>
-                                <span class="purpose-pick" role="button" tabindex="0">Для семьи и детей</span>
-                                <span class="purpose-pick" role="button" tabindex="0">Для работы</span>
-                            </span>
                         </label>
+                        <span class="purpose-picks">
+                            <span class="purpose-pick" role="button" tabindex="0">Для себя</span>
+                            <span class="purpose-pick" role="button" tabindex="0">Для семьи и детей</span>
+                            <span class="purpose-pick" role="button" tabindex="0">Для работы</span>
+                        </span>
                         <button type="submit" class="btn">Записаться на курс</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
