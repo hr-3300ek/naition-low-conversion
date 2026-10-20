@@ -318,6 +318,7 @@
                         Оставьте заявку, и мы свяжемся с вами, чтобы подтвердить место и ответить на вопросы.
                         Заявка ни к чему не обязывает.
                     </p>
+                    <p class="form-contacts">Есть вопросы? Позвоните: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
                     <p class="form-tariff" id="form-tariff" hidden></p>
                     <p class="form-required-note">Все поля обязательны <span class="required" aria-hidden="true">*</span></p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
@@ -350,6 +351,7 @@
 
     <footer class="site-footer">
         <div class="container">
+            <p class="footer-contacts"><a href="tel:+74950000000">+7 (495) 000-00-00</a> · <a href="mailto:info@hr-3300ek.naition.sortedmap.ru">info@hr-3300ek.naition.sortedmap.ru</a></p>
             © 2026 Учебный центр «Спаси-Себя». Курс первой помощи, Москва.
         </div>
     </footer>

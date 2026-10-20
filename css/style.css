@@ -454,9 +454,24 @@ img {
 }
 
 .form-tariff {
-    margin: -24px 0 24px;
+    margin: 0 0 16px;
     font-weight: 600;
     color: var(--heading);
+}
+
+.form-contacts {
+    margin: -24px 0 16px;
+}
+
+.form-contacts a,
+.footer-contacts a {
+    white-space: nowrap;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.footer-contacts {
+    margin: 0 0 8px;
 }
 
 .form-message {

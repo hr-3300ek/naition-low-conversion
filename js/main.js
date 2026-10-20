@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = button.closest('.pricing-card');
             if (tariff) {
                 const title = card?.querySelector('h3')?.textContent.trim();
-                const price = card?.querySelector('.price')?.textContent.trim();
+                const price = card?.querySelector('.price')?.textContent.trim().replace(/\s+/g, '\u00a0');
                 tariff.textContent = card ? `Выбран тариф: ${title}, ${price}` : '';
                 tariff.hidden = !card;
             }
