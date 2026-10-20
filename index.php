@@ -30,7 +30,7 @@
                 с реальными вызовами.
             </p>
             <div class="hero-cta">
-                <button type="button" class="btn btn-register btn-hero">Записаться на 8 ноября</button>
+                <button type="button" class="btn btn-register btn-hero">Записаться на курс</button>
                 <span class="hero-cta-note">от 4 900 ₽ · осталось 5 мест из 14 · сертификат</span>
             </div>
             <p class="hero-proof">Ведут врач скорой помощи с 8 000+ выездов и инструкторы РКК и ERC</p>
@@ -143,7 +143,7 @@
                 </div>
                 <div class="section-cta">
                     <p>Уже понимаете, что этот навык нужен вам? Не обязательно дочитывать всё до конца.</p>
-                    <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
                 </div>
             </div>
         </section>
@@ -214,7 +214,7 @@
                     </p>
                 </div>
                 <div class="section-cta">
-                    <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
                 </div>
             </div>
         </section>
@@ -224,7 +224,7 @@
             <div class="photo-caption">
                 <div class="container">
                     <p>Каждый участник несколько раз проходит полный цикл СЛР на манекене под контролем инструктора.</p>
-                    <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
                 </div>
             </div>
         </section>
@@ -406,7 +406,7 @@
                 </div>
             </div>
             <div class="sticky-cta" id="sticky-cta" hidden>
-                <button type="button" class="btn">Записаться на 8 ноября</button>
+                <button type="button" class="btn">Записаться на курс</button>
             </div>
         </section>
     </main>
