@@ -142,6 +142,7 @@
                     </article>
                 </div>
                 <div class="section-cta">
+                    <p>Уже понимаете, что этот навык нужен вам? Не обязательно дочитывать всё до конца.</p>
                     <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
                 </div>
             </div>
@@ -266,6 +267,12 @@
                         </ul>
                     </article>
                 </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><strong>9 200+</strong><span>участников прошли курс</span></div>
+                    <div class="stat-card"><strong>4,9 / 5</strong><span>средняя оценка выпускников</span></div>
+                    <div class="stat-card"><strong>96%</strong><span>рекомендуют курс коллегам</span></div>
+                    <div class="stat-card"><strong>14 лет</strong><span>опыт инструкторов</span></div>
+                </div>
                 <div class="reviews">
                     <h3>Отзывы участников</h3>
                     <div class="reviews-grid">
@@ -329,20 +336,27 @@
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                 </div>
+                <p class="pricing-guarantee">
+                    Оплата — только после подтверждения места. Не сможете прийти — перенесём на следующую
+                    дату или вернём деньги. Заявка ни к чему не обязывает: сначала мы созвонимся и ответим на вопросы.
+                </p>
             </div>
         </section>
 
         <section class="section registration-section" id="registration">
             <div class="container">
                 <div class="registration-panel">
-                    <h2 class="section-title">Записаться на курс</h2>
+                    <h2 class="section-title">Оставьте заявку — займёт минуту</h2>
                     <p class="section-lead">
-                        Оставьте заявку, и мы свяжемся с вами, чтобы подтвердить место и ответить на вопросы.
-                        Заявка ни к чему не обязывает.
+                        Курс 8 ноября, в группе осталось 5 мест из 14. Заполните форму — мы перезвоним,
+                        подтвердим место и ответим на вопросы. Ничего оплачивать сейчас не нужно.
                     </p>
-                    <p class="form-contacts">Есть вопросы? Позвоните: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+                    <ul class="form-benefits">
+                        <li>Звонок в течение рабочего дня</li>
+                        <li>Оплата — после подтверждения места</li>
+                        <li>Сертификат и памятка после курса</li>
+                    </ul>
                     <p class="form-tariff" id="form-tariff">Тариф можно не выбирать — подберём вместе при звонке.</p>
-                    <p class="form-required-note">Все поля обязательны <span class="required" aria-hidden="true">*</span></p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
                             <span>Имя <span class="required" aria-hidden="true">*</span></span>
@@ -366,8 +380,10 @@
                             <span class="purpose-pick" role="button" tabindex="0">Для работы</span>
                         </span>
                         <button type="submit" class="btn">Записаться на курс</button>
+                        <span class="form-reassure">Нажимая кнопку, вы оставляете заявку, а не оплату. Мы свяжемся и всё подтвердим.</span>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
+                    <p class="form-contacts">Есть вопросы? Позвоните: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
                 </div>
                 <div class="faq">
                     <h3>Частые вопросы</h3>
