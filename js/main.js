@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // На телефоне кнопка записи висит внизу экрана, пока не видны другие кнопки записи и форма.
+    // Кнопка записи висит внизу экрана, пока не видны другие кнопки записи и форма.
     const stickyCta = document.getElementById('sticky-cta');
     if (stickyCta && registrationSection && 'IntersectionObserver' in window) {
         const visible = new Set();

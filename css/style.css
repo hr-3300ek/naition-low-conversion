@@ -500,23 +500,30 @@ img {
     font-size: 0.95rem;
 }
 
-.sticky-cta {
+.sticky-cta[hidden] {
     display: none;
 }
 
+.sticky-cta {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 10;
+}
+
+.sticky-cta .btn {
+    box-shadow: 0 10px 24px rgba(45, 52, 54, 0.25);
+}
+
 @media (max-width: 720px) {
-    .sticky-cta:not([hidden]) {
-        display: block;
-        position: fixed;
+    .sticky-cta {
         left: 16px;
         right: 16px;
         bottom: 16px;
-        z-index: 10;
     }
 
     .sticky-cta .btn {
         width: 100%;
-        box-shadow: 0 10px 24px rgba(45, 52, 54, 0.25);
     }
 
     .site-footer {
