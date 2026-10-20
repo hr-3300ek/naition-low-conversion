@@ -15,7 +15,7 @@
             <span class="hero-badge" id="hero-badge" data-start="2026-11-08T10:00:00+03:00">Офлайн-курс · 8 ноября 2026</span>
             <h1>Научитесь оказывать первую помощь за один день</h1>
             <p class="hero-text">
-                Научитесь действовать уверенно в экстренной ситуации: остановить кровотечение,
+                За 8 часов практики вы научитесь уверенно действовать в экстренной ситуации: остановить кровотечение,
                 провести сердечно-лёгочную реанимацию, помочь при травмах и ожогах до приезда
                 медиков. Курс построен на практике с инструкторами, которые каждый день работают
                 с реальными вызовами.
@@ -338,10 +338,34 @@
                         <label>
                             <span>Цель прохождения курса <span class="required" aria-hidden="true">*</span></span>
                             <textarea name="purpose" required placeholder="Например: хочу уметь помочь ребёнку или коллеге"></textarea>
+                            <span class="purpose-picks">
+                                <span class="purpose-pick" role="button" tabindex="0">Для себя</span>
+                                <span class="purpose-pick" role="button" tabindex="0">Для семьи и детей</span>
+                                <span class="purpose-pick" role="button" tabindex="0">Для работы</span>
+                            </span>
                         </label>
                         <button type="submit" class="btn">Записаться на курс</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
+                </div>
+                <div class="faq">
+                    <h3>Частые вопросы</h3>
+                    <details>
+                        <summary>Нужна ли медицинская подготовка?</summary>
+                        <p>Нет. Курс рассчитан на каждого: всё показывают с нуля и отрабатывают на манекенах под контролем инструктора.</p>
+                    </details>
+                    <details>
+                        <summary>Сколько человек в группе?</summary>
+                        <p>До 14 человек, чтобы каждый успел несколько раз отработать все ключевые навыки.</p>
+                    </details>
+                    <details>
+                        <summary>Что я получу после курса?</summary>
+                        <p>Именной сертификат и памятку по алгоритмам первой помощи для дома, работы и поездок.</p>
+                    </details>
+                    <details>
+                        <summary>Можно ли пройти курс от компании?</summary>
+                        <p>Да, для этого есть корпоративный тариф: разбор рисков профессии, консультация для HR и отчёт о прохождении для работодателя.</p>
+                    </details>
                 </div>
             </div>
             <div class="sticky-cta" id="sticky-cta" hidden>

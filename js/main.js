@@ -88,6 +88,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.noValidate = true;
 
+    // Быстрые варианты цели: <span>, а не <button>, чтобы не было лишних кнопок внутри формы.
+    const purpose = form.elements.namedItem('purpose');
+    form.querySelectorAll('.purpose-pick').forEach((pick) => {
+        const choose = (event) => {
+            event.preventDefault();
+            purpose.value = pick.textContent.trim();
+            purpose.dispatchEvent(new Event('input', { bubbles: true }));
+            validateField(purpose);
+        };
+        pick.addEventListener('click', choose);
+        pick.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                choose(event);
+            }
+        });
+    });
+
     fields.forEach((field) => {
         field.addEventListener('input', () => {
             if (field.hasAttribute('aria-invalid')) {

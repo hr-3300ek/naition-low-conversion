@@ -435,6 +435,25 @@ img {
     border-color: #2e7d32;
 }
 
+.purpose-picks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.purpose-pick {
+    padding: 6px 14px;
+    border: 1px solid #d8d2cb;
+    border-radius: 999px;
+    background: var(--white);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.purpose-pick:hover {
+    border-color: var(--accent);
+}
+
 .field-error {
     color: #c0392b;
     font-size: 0.92rem;
@@ -477,6 +496,31 @@ img {
 
 .footer-contacts {
     margin: 0 0 8px;
+}
+
+.faq {
+    max-width: 760px;
+    margin: 32px auto 0;
+}
+
+.faq h3 {
+    margin: 0 0 12px;
+    color: var(--heading);
+}
+
+.faq details {
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd5cc;
+}
+
+.faq summary {
+    font-weight: 600;
+    color: var(--heading);
+    cursor: pointer;
+}
+
+.faq details p {
+    margin: 8px 0 0;
 }
 
 .form-message {
