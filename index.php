@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первая помощь: практический курс для каждого</title>
+    <meta name="description" content="Однодневный офлайн-курс первой помощи в Москве: СЛР, кровотечения, переломы, ожоги. 8 часов практики на манекенах, группы до 14 человек, сертификат. От 4 900 ₽.">
     <link rel="stylesheet" href="css/style.css">
     <script src="api/visit.php" defer></script>
     <script src="js/main.js" defer></script>
@@ -19,6 +20,10 @@
                 медиков. Курс построен на практике с инструкторами, которые каждый день работают
                 с реальными вызовами.
             </p>
+            <div class="hero-cta">
+                <button type="button" class="btn btn-register btn-hero">Записаться на курс</button>
+                <span class="hero-cta-note">от 4 900 ₽ · до 14 человек в группе · сертификат</span>
+            </div>
             <div class="meta-grid">
                 <div class="meta-card">
                     <strong>Дата</strong>
@@ -34,7 +39,7 @@
                 </div>
             </div>
             <div class="hero-note">
-                На курсе вы отработаете навыки на манекенах и отработаете сценарии, которые
+                На курсе вы отработаете навыки на манекенах и пройдёте сценарии, которые
                 помогают сохранить спокойствие и принимать правильные решения под давлением времени.
                 После занятия вы получите сертификат и памятку по алгоритмам первой помощи.
             </div>
@@ -104,7 +109,7 @@
                             клетку, с какой частотой и глубиной, и когда можно не делать
                             искусственное дыхание, а ограничиться только компрессиями. Мы отработаем
                             смену спасателя, работу в паре и втроём, использование тренировочного
-                            автоматического дефibrиллятора AED: как включить прибор, куда приложить
+                            автоматического дефибриллятора AED: как включить прибор, куда приложить
                             электроды и как не мешать ему анализировать ритм. Каждый участник несколько
                             раз пройдёт полный цикл «обнаружил — проверил — начал СЛР — дождался
                             скорой», чтобы руки запомнили движения, а голова — порядок действий.
@@ -171,6 +176,9 @@
                         </p>
                     </article>
                 </div>
+                <div class="section-cta">
+                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
+                </div>
             </div>
         </section>
 
@@ -200,7 +208,7 @@
                     </article>
                     <article class="injury-card">
                         <h3>Остановка дыхания</h3>
-                        <p>СЛР, работа в паре, использование автоматического дефibrиллятора, действия до приезда скорой.</p>
+                        <p>СЛР, работа в паре, использование автоматического дефибриллятора, действия до приезда скорой.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Травмы головы и позвоночника</h3>
@@ -239,11 +247,14 @@
                         какие данные важно сохранить для дальнейшего разбирательства или страхового случая.
                     </p>
                 </div>
+                <div class="section-cta">
+                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
+                </div>
             </div>
         </section>
 
         <section class="emotional-photo">
-            <img src="images/cpr-training.jpg" alt="Практика сердечно-легочной реанимации на манекене">
+            <img src="images/cpr-training.jpg" alt="Практика сердечно-легочной реанимации на манекене" width="1600" height="1067" loading="lazy">
         </section>
 
         <section class="section">
@@ -305,6 +316,7 @@
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                     <article class="pricing-card featured">
+                        <span class="pricing-badge">Рекомендуем</span>
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
                         <ul class="pricing-list">
@@ -334,25 +346,28 @@
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="section-lead">
                         Оставьте заявку, и мы свяжемся с вами, чтобы подтвердить место и ответить на вопросы.
+                        Заявка ни к чему не обязывает.
                     </p>
+                    <p class="form-tariff" id="form-tariff" hidden></p>
+                    <p class="form-required-note">Все поля обязательны <span class="required" aria-hidden="true">*</span></p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
-                            Имя
-                            <input type="text" name="name" required autocomplete="name">
+                            <span>Имя <span class="required" aria-hidden="true">*</span></span>
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
                         </label>
                         <label>
-                            Телефон
-                            <input type="tel" name="phone" required autocomplete="tel">
+                            <span>Телефон <span class="required" aria-hidden="true">*</span></span>
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 900 000-00-00">
                         </label>
                         <label>
-                            E-mail
-                            <input type="email" name="email" required autocomplete="email">
+                            <span>E-mail <span class="required" aria-hidden="true">*</span></span>
+                            <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
-                            Цель прохождения курса
-                            <textarea name="purpose" required></textarea>
+                            <span>Цель прохождения курса <span class="required" aria-hidden="true">*</span></span>
+                            <textarea name="purpose" required placeholder="Например: хочу уметь помочь ребёнку или коллеге"></textarea>
                         </label>
-                        <button type="submit" class="btn">Отправить заявку</button>
+                        <button type="submit" class="btn">Записаться на курс</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
