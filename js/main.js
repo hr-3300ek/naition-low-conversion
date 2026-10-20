@@ -12,16 +12,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const card = button.closest('.pricing-card');
-            if (tariff && card) {
-                const title = card.querySelector('h3')?.textContent.trim();
-                const price = card.querySelector('.price')?.textContent.trim();
-                tariff.textContent = `Выбран тариф: ${title}, ${price}`;
-                tariff.hidden = false;
+            if (tariff) {
+                const title = card?.querySelector('h3')?.textContent.trim();
+                const price = card?.querySelector('.price')?.textContent.trim();
+                tariff.textContent = card ? `Выбран тариф: ${title}, ${price}` : '';
+                tariff.hidden = !card;
             }
 
             registrationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
+
+    // На телефоне кнопка записи висит внизу экрана, пока не видны первый экран и форма.
+    const stickyCta = document.getElementById('sticky-cta');
+    const hero = document.querySelector('.hero-cta');
+    if (stickyCta && hero && registrationSection && 'IntersectionObserver' in window) {
+        const visible = new Set();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    visible.add(entry.target);
+                } else {
+                    visible.delete(entry.target);
+                }
+            });
+            stickyCta.hidden = visible.size > 0;
+        });
+        observer.observe(hero);
+        observer.observe(registrationSection);
+        stickyCta.querySelector('button')?.addEventListener('click', () => {
+            registrationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    }
 
     if (!form) {
         return;
@@ -92,10 +114,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const submitButton = form.querySelector('button[type="submit"]');
+        const submitText = submitButton?.textContent;
         const formData = new FormData(form);
 
         if (submitButton instanceof HTMLButtonElement) {
             submitButton.disabled = true;
+            submitButton.textContent = 'Отправляем…';
         }
 
         if (message) {
@@ -109,10 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: formData,
             });
 
-            const data = await response.json();
+            const data = await response.json().catch(() => ({}));
 
             if (!response.ok || !data.ok) {
-                throw new Error(data.error || 'Не удалось отправить заявку.');
+                throw new Error(data.error || 'Не удалось отправить заявку. Попробуйте ещё раз через минуту.');
             }
 
             if (message) {
@@ -122,14 +146,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             form.reset();
             resetValidation();
+            if (tariff) {
+                tariff.hidden = true;
+            }
         } catch (error) {
             if (message) {
-                message.textContent = error instanceof Error ? error.message : 'Не удалось отправить заявку.';
+                message.textContent = error instanceof TypeError
+                    ? 'Не удалось отправить заявку: нет связи с сервером. Проверьте интернет и попробуйте ещё раз.'
+                    : error.message;
                 message.className = 'form-message error';
             }
         } finally {
             if (submitButton instanceof HTMLButtonElement) {
                 submitButton.disabled = false;
+                submitButton.textContent = submitText;
             }
 
             message?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });

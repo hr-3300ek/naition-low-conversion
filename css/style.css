@@ -454,7 +454,33 @@ img {
     font-size: 0.95rem;
 }
 
+.sticky-cta {
+    display: none;
+}
+
 @media (max-width: 720px) {
+    .sticky-cta:not([hidden]) {
+        display: block;
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        z-index: 10;
+    }
+
+    .sticky-cta .btn {
+        width: 100%;
+        box-shadow: 0 10px 24px rgba(45, 52, 54, 0.25);
+    }
+
+    .site-footer {
+        padding-bottom: 96px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
     .section {
         padding: 56px 0;
     }
