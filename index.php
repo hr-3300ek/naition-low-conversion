@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курс первой помощи в Москве, 8 ноября 2026 — учебный центр «Спаси-Себя»</title>
-    <meta name="description" content="Однодневный офлайн-курс первой помощи в Москве: СЛР, кровотечения, переломы, ожоги. 8 часов практики на манекенах, группы до 14 человек, сертификат. От 4 900 ₽.">
+    <meta name="description" content="Курс первой помощи в Москве 8 ноября 2026: СЛР, кровотечения, переломы, ожоги. 8 часов практики на манекенах, группы до 14 человек, сертификат. От 4 900 ₽.">
+    <link rel="canonical" href="https://hr-3300ek.naition.sortedmap.ru/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23c62828'/%3E%3Cpath d='M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z' fill='%23fff'/%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://hr-3300ek.naition.sortedmap.ru/">
+    <meta property="og:title" content="Научитесь оказывать первую помощь за один день — курс 8 ноября в Москве">
+    <meta property="og:description" content="8 часов практики на манекенах, группы до 14 человек, сертификат. От 4 900 ₽.">
+    <meta property="og:image" content="https://hr-3300ek.naition.sortedmap.ru/images/cpr-training.jpg">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "EducationEvent", "name": "Курс первой помощи: практика за один день", "description": "Однодневный офлайн-курс первой помощи: СЛР, кровотечения, переломы, ожоги. 8 часов практики на манекенах, группы до 14 человек, сертификат.", "startDate": "2026-11-08T10:00:00+03:00", "endDate": "2026-11-08T18:00:00+03:00", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled", "inLanguage": "ru", "image": "https://hr-3300ek.naition.sortedmap.ru/images/cpr-training.jpg", "url": "https://hr-3300ek.naition.sortedmap.ru/", "location": {"@type": "Place", "name": "Учебный центр «Спаси-Себя»", "address": {"@type": "PostalAddress", "streetAddress": "Новослободская ул., 10", "addressLocality": "Москва", "addressCountry": "RU"}}, "organizer": {"@type": "Organization", "name": "Учебный центр «Спаси-Себя»", "url": "https://hr-3300ek.naition.sortedmap.ru/", "telephone": "+74950000000"}, "offers": [{"@type": "Offer", "name": "Базовый", "price": "4900", "priceCurrency": "RUB", "availability": "https://schema.org/LimitedAvailability", "url": "https://hr-3300ek.naition.sortedmap.ru/#registration", "validFrom": "2026-10-01"}, {"@type": "Offer", "name": "Расширенный", "price": "7900", "priceCurrency": "RUB", "availability": "https://schema.org/LimitedAvailability", "url": "https://hr-3300ek.naition.sortedmap.ru/#registration", "validFrom": "2026-10-01"}, {"@type": "Offer", "name": "Корпоративный", "price": "12900", "priceCurrency": "RUB", "availability": "https://schema.org/LimitedAvailability", "url": "https://hr-3300ek.naition.sortedmap.ru/#registration", "validFrom": "2026-10-01"}]}</script>
     <link rel="stylesheet" href="css/style.css">
     <script src="api/visit.php" defer></script>
     <script src="js/main.js" defer></script>
@@ -21,7 +30,7 @@
                 с реальными вызовами.
             </p>
             <div class="hero-cta">
-                <button type="button" class="btn btn-register btn-hero">Записаться на курс</button>
+                <button type="button" class="btn btn-register btn-hero">Записаться на 8 ноября</button>
                 <span class="hero-cta-note">от 4 900 ₽ · осталось 5 мест из 14 · сертификат</span>
             </div>
             <p class="hero-proof">Ведут врач скорой помощи с 8 000+ выездов и инструкторы РКК и ERC</p>
@@ -36,13 +45,8 @@
                 </div>
                 <div class="meta-card">
                     <strong>Место</strong>
-                    Москва, ул. Примерная, 10, учебный центр «Спаси-Себя»
+                    Москва, Новослободская ул., 10 (м. Новослободская), учебный центр «Спаси-Себя»
                 </div>
-            </div>
-            <div class="hero-note">
-                На курсе вы отработаете навыки на манекенах и пройдёте сценарии, которые
-                помогают сохранить спокойствие и принимать правильные решения под давлением времени.
-                После занятия вы получите сертификат и памятку по алгоритмам первой помощи.
             </div>
         </div>
     </header>
@@ -138,7 +142,7 @@
                     </article>
                 </div>
                 <div class="section-cta">
-                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
                 </div>
             </div>
         </section>
@@ -153,27 +157,27 @@
                 <div class="injury-grid">
                     <article class="injury-card">
                         <h3>Кровотечения</h3>
-                        <p>Артериальные, венозные и капиллярные кровотечения, давящая повязка, турникет, контроль после остановки крови.</p>
+                        <p>Давящая повязка и турникет.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Переломы и вывихи</h3>
-                        <p>Признаки перелома, иммобилизация, транспортная шина, ошибки при перемещении пострадавшего.</p>
+                        <p>Шина из подручных средств.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Ожоги</h3>
-                        <p>Термические и химические ожоги, охлаждение, стерильная повязка, когда нельзя снимать одежду с места ожога.</p>
+                        <p>Охлаждение и стерильная повязка.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Обмороки и шок</h3>
-                        <p>Признаки шока, положение тела, контроль дыхания, согревание, что нельзя давать пострадавшему.</p>
+                        <p>Положение тела и согревание.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Остановка дыхания</h3>
-                        <p>СЛР, работа в паре, использование автоматического дефибриллятора, действия до приезда скорой.</p>
+                        <p>СЛР и дефибриллятор AED.</p>
                     </article>
                     <article class="injury-card">
                         <h3>Травмы головы и позвоночника</h3>
-                        <p>Подозрение на травму шеи и спины, когда нельзя менять положение, фиксация головы и ожидание медиков.</p>
+                        <p>Фиксация головы, без перемещения.</p>
                     </article>
                 </div>
             </div>
@@ -209,7 +213,7 @@
                     </p>
                 </div>
                 <div class="section-cta">
-                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
                 </div>
             </div>
         </section>
@@ -219,7 +223,7 @@
             <div class="photo-caption">
                 <div class="container">
                     <p>Каждый участник несколько раз проходит полный цикл СЛР на манекене под контролем инструктора.</p>
-                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на 8 ноября</button>
                 </div>
             </div>
         </section>
@@ -232,7 +236,7 @@
                 </p>
                 <div class="instructors-grid">
                     <article class="instructor-card">
-                        <div class="instructor-photo">АК</div>
+                        <div class="instructor-photo"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="12"/><path d="M10 58c2-13 11-20 22-20s20 7 22 20z"/></svg></div>
                         <h3>Алексей Кравцов</h3>
                         <p class="instructor-title">Врач скорой медицинской помощи, стаж 14 лет</p>
                         <ul class="credentials">
@@ -242,7 +246,7 @@
                         </ul>
                     </article>
                     <article class="instructor-card">
-                        <div class="instructor-photo">МС</div>
+                        <div class="instructor-photo"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="12"/><path d="M10 58c2-13 11-20 22-20s20 7 22 20z"/></svg></div>
                         <h3>Марина Соколова</h3>
                         <p class="instructor-title">Инструктор РКК, фельдшер, стаж 11 лет</p>
                         <ul class="credentials">
@@ -252,7 +256,7 @@
                         </ul>
                     </article>
                     <article class="instructor-card">
-                        <div class="instructor-photo">ДН</div>
+                        <div class="instructor-photo"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="12"/><path d="M10 58c2-13 11-20 22-20s20 7 22 20z"/></svg></div>
                         <h3>Дмитрий Новиков</h3>
                         <p class="instructor-title">Парамедик, наставник учебного центра</p>
                         <ul class="credentials">
@@ -337,7 +341,7 @@
                         Заявка ни к чему не обязывает.
                     </p>
                     <p class="form-contacts">Есть вопросы? Позвоните: <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
-                    <p class="form-tariff" id="form-tariff" hidden></p>
+                    <p class="form-tariff" id="form-tariff">Тариф можно не выбирать — подберём вместе при звонке.</p>
                     <p class="form-required-note">Все поля обязательны <span class="required" aria-hidden="true">*</span></p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
                         <label>
@@ -353,7 +357,7 @@
                             <input type="email" name="email" required autocomplete="email" placeholder="you@example.ru">
                         </label>
                         <label>
-                            <span>Цель прохождения курса <span class="required" aria-hidden="true">*</span></span>
+                            <span>Зачем вам курс? <span class="required" aria-hidden="true">*</span></span>
                             <textarea name="purpose" required placeholder="Например: хочу уметь помочь ребёнку или коллеге"></textarea>
                             <span class="purpose-picks">
                                 <span class="purpose-pick" role="button" tabindex="0">Для себя</span>
@@ -386,7 +390,7 @@
                 </div>
             </div>
             <div class="sticky-cta" id="sticky-cta" hidden>
-                <button type="button" class="btn">Записаться на курс</button>
+                <button type="button" class="btn">Записаться на 8 ноября</button>
             </div>
         </section>
     </main>

@@ -183,7 +183,21 @@ img {
 }
 
 .injury-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+}
+
+.injury-card {
+    padding: 18px 20px;
+}
+
+.injury-card h3 {
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+}
+
+.injury-card p {
+    margin: 0;
 }
 
 .injury-card:nth-child(odd) {
@@ -252,6 +266,12 @@ img {
     font-weight: 700;
     color: var(--heading);
     background: var(--blue);
+}
+
+.instructor-photo svg {
+    width: 64px;
+    height: 64px;
+    fill: rgba(45, 52, 54, 0.45);
 }
 
 .instructor-card:nth-child(2) .instructor-photo { background: var(--mint); }

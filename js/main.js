@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registration-form');
     const message = document.getElementById('form-message');
     const tariff = document.getElementById('form-tariff');
+    const tariffDefault = tariff?.textContent;
     const registerButtons = document.querySelectorAll('.btn-register');
 
     const badge = document.getElementById('hero-badge');
@@ -25,8 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (tariff) {
                 const title = card?.querySelector('h3')?.textContent.trim();
                 const price = card?.querySelector('.price')?.textContent.trim().replace(/\s+/g, '\u00a0');
-                tariff.textContent = card ? `Выбран тариф: ${title}, ${price}` : '';
-                tariff.hidden = !card;
+                tariff.textContent = card ? `Выбран тариф: ${title}, ${price}` : tariffDefault;
             }
 
             registrationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -173,7 +173,20 @@ document.addEventListener('DOMContentLoaded', () => {
             form.reset();
             resetValidation();
             if (tariff) {
-                tariff.hidden = true;
+                tariff.textContent = tariffDefault;
+            }
+            if (message && badge) {
+                const calendar = document.createElement('a');
+                calendar.href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent([
+                    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//spasi-sebya//course//RU', 'BEGIN:VEVENT',
+                    'UID:first-aid-course-20261108@spasi-sebya', 'DTSTAMP:20261020T000000Z',
+                    'DTSTART:20261108T070000Z', 'DTEND:20261108T150000Z',
+                    'SUMMARY:Курс первой помощи «Спаси-Себя»', 'LOCATION:Москва\\, Новослободская ул.\\, 10',
+                    'END:VEVENT', 'END:VCALENDAR',
+                ].join('\r\n'));
+                calendar.download = 'kurs-pervoy-pomoshchi.ics';
+                calendar.textContent = 'Добавить в календарь';
+                message.append(' ', calendar);
             }
         } catch (error) {
             if (message) {
