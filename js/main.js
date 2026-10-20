@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const tariff = document.getElementById('form-tariff');
     const registerButtons = document.querySelectorAll('.btn-register');
 
+    const badge = document.getElementById('hero-badge');
+    const daysLeft = badge ? Math.ceil((new Date(badge.dataset.start) - Date.now()) / 86400000) : 0;
+    if (daysLeft > 0) {
+        const mod10 = daysLeft % 10;
+        const mod100 = daysLeft % 100;
+        const word = mod10 === 1 && mod100 !== 11 ? 'день'
+            : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14) ? 'дня' : 'дней';
+        badge.textContent += ` · через ${daysLeft} ${word}`;
+    }
+
     registerButtons.forEach((button) => {
         button.addEventListener('click', () => {
             if (!registrationSection) {

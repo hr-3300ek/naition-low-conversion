@@ -365,6 +365,11 @@ img {
     gap: 16px 24px;
 }
 
+.hero-proof {
+    margin: 16px 0 0;
+    color: var(--heading);
+}
+
 .hero-cta-note {
     color: var(--heading);
     font-weight: 600;

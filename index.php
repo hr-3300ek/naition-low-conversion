@@ -12,8 +12,8 @@
 <body>
     <header class="hero">
         <div class="container hero-content">
-            <span class="hero-badge">Офлайн-курс · 8 ноября 2026</span>
-            <h1>Первая помощь: практический курс для каждого</h1>
+            <span class="hero-badge" id="hero-badge" data-start="2026-11-08T10:00:00+03:00">Офлайн-курс · 8 ноября 2026</span>
+            <h1>Научитесь оказывать первую помощь за один день</h1>
             <p class="hero-text">
                 Научитесь действовать уверенно в экстренной ситуации: остановить кровотечение,
                 провести сердечно-лёгочную реанимацию, помочь при травмах и ожогах до приезда
@@ -24,6 +24,7 @@
                 <button type="button" class="btn btn-register btn-hero">Записаться на курс</button>
                 <span class="hero-cta-note">от 4 900 ₽ · до 14 человек в группе · сертификат</span>
             </div>
+            <p class="hero-proof">Ведут врач скорой помощи с 8 000+ выездов и инструкторы РКК и ERC</p>
             <div class="meta-grid">
                 <div class="meta-card">
                     <strong>Дата</strong>
