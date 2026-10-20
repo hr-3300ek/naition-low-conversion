@@ -23,10 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // На телефоне кнопка записи висит внизу экрана, пока не видны первый экран и форма.
+    // На телефоне кнопка записи висит внизу экрана, пока не видны другие кнопки записи и форма.
     const stickyCta = document.getElementById('sticky-cta');
-    const hero = document.querySelector('.hero-cta');
-    if (stickyCta && hero && registrationSection && 'IntersectionObserver' in window) {
+    if (stickyCta && registrationSection && 'IntersectionObserver' in window) {
         const visible = new Set();
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             stickyCta.hidden = visible.size > 0;
         });
-        observer.observe(hero);
+        registerButtons.forEach((button) => observer.observe(button));
         observer.observe(registrationSection);
         stickyCta.querySelector('button')?.addEventListener('click', () => {
             registrationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });

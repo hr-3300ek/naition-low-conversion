@@ -215,6 +215,12 @@
 
         <section class="emotional-photo">
             <img src="images/cpr-training.jpg" alt="Практика сердечно-лёгочной реанимации на манекене" width="1600" height="1067">
+            <div class="photo-caption">
+                <div class="container">
+                    <p>Каждый участник несколько раз проходит полный цикл СЛР на манекене под контролем инструктора.</p>
+                    <button type="button" class="btn btn-register btn-inline">Записаться на курс</button>
+                </div>
+            </div>
         </section>
 
         <section class="section">
@@ -268,6 +274,7 @@
                     <article class="pricing-card">
                         <h3>Базовый</h3>
                         <div class="price">4 900 ₽</div>
+                        <div class="price-note">за участника</div>
                         <ul class="pricing-list">
                             <li>Участие в полном однодневном курсе</li>
                             <li>Сертификат и памятка</li>
@@ -279,17 +286,20 @@
                         <span class="pricing-badge">Рекомендуем</span>
                         <h3>Расширенный</h3>
                         <div class="price">7 900 ₽</div>
+                        <div class="price-note">за участника</div>
                         <ul class="pricing-list">
                             <li>Всё из базового тарифа</li>
                             <li>Набор перевязочных материалов</li>
-                            <li>Дополнительный практический блок</li>
+                            <li>Дополнительная практика СЛР и остановки кровотечений в малой группе</li>
                         </ul>
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                     <article class="pricing-card">
                         <h3>Корпоративный</h3>
                         <div class="price">12 900 ₽</div>
+                        <div class="price-note">за участника</div>
                         <ul class="pricing-list">
+                            <li>Всё из расширенного тарифа</li>
                             <li>Индивидуальный разбор рисков профессии</li>
                             <li>Консультация для HR или руководителя</li>
                             <li>Отчёт о прохождении для работодателя</li>
